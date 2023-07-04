@@ -28,6 +28,7 @@ public class GrossPayInputValidation {
             System.out.println("Invalid input, please enter a number between and including 1 and 40");
             hoursWorked = scanner.nextDouble();
         }
+        scanner.close();
         double weeklyPay = rate * hoursWorked;
         System.out.println("Weekly gross pay is: $" + weeklyPay);
     }
