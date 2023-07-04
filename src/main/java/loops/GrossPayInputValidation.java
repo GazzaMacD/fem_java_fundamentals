@@ -18,14 +18,14 @@ public class GrossPayInputValidation {
     public static void main(String[] args) {
         double rate = 15;
         double maxHours = 40;
-        double minHours = 1;
+        double minHours = 0;
 
         System.out.println("How many hours did you work?");
         Scanner scanner = new Scanner(System.in);
         double hoursWorked = scanner.nextDouble();
 
         while (hoursWorked > maxHours || hoursWorked < minHours){
-            System.out.println("Invalid input, please enter a number between and including 1 and 40");
+            System.out.println("Invalid input, please enter a number between and including " + minHours + " and "  + maxHours + ".");
             hoursWorked = scanner.nextDouble();
         }
         scanner.close();
